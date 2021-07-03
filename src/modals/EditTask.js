@@ -20,10 +20,8 @@ const EditTask = ({ modal, toggle, updateTask, taskobj }) => {
     }
 
     useEffect(() => {
-        let newtask = taskobj.Name
-        let newdes = taskobj.Description
-        setTask(newtask)
-        setDes(newdes)
+        //setTask(taskobj.Name)
+        //setDes(taskobj.Description)
     }, []);
 
     const handleUpdate = (e) => {
