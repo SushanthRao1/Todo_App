@@ -20,9 +20,9 @@ const EditTask = ({ modal, toggle, updateTask, taskobj }) => {
     }
 
     useEffect(() => {
-        //setTask(taskobj.Name)
-        //setDes(taskobj.Description)
-    }, []);
+        setTask(taskobj.Name)
+        setDes(taskobj.Description)
+    }, [taskobj.Name, taskobj.Description]);
 
     const handleUpdate = (e) => {
         e.preventDefault();
