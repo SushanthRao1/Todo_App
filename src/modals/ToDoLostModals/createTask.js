@@ -24,6 +24,8 @@ const CreateTask = ({ modal, toggle, save }) => {
         taskobject["Name"] = taskName
         taskobject["Description"] = des
         save(taskobject)
+        setTask('');
+        setDes('');
     }
 
     return (
@@ -42,10 +44,11 @@ const CreateTask = ({ modal, toggle, save }) => {
                     </div>
                 </form>
             </ModalBody>
-            <ModalFooter>
+            {taskName && des &&  <ModalFooter>
                 <Button color="primary" onClick={handleSave}>Create</Button>{' '}
                 <Button color="secondary" onClick={toggle}>Cancel</Button>
             </ModalFooter>
+            }
         </Modal >
     )
 }

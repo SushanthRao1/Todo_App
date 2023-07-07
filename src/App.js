@@ -1,4 +1,6 @@
 import './App.css';
+import Router from './router'
+import TodoList from '../src/components/ToDoList/TodoList';
 import Classcomp from '../src/components/reactBasics/Classcomp';
 import Movie from './components/reactBasics/Funcomp.jsx';
 import UseStateHK from './components/reactBasics/useStateHK.jsx';
@@ -6,7 +8,6 @@ import APIDemo from './components/reactBasics/ApiDemo.jsx';
 import Calculator from './components/reactBasics/Statecomp.jsx';
 import EveneChange from './components/reactBasics/InputEvent.jsx';
 import UseReducer from './components/reactBasics/useReducer.jsx';
-import TodoList from '../src/components/reactBasics/Classcomp';
 import 'bootstrap/dist/css/bootstrap.min.css' //it will support all the other components
 import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 
@@ -41,20 +42,21 @@ function Routerfun() {
   </div>)
 }
 
+// function App() {
+//   return (
+//     <div className="App">
+//       <Router />
+
+//     </div >
+//   );
+// }
+
 function App() {
   return (
     <div className="App">
       <TodoList />
-
-    </div >
+    </div>
   );
 }
-// function App() {
-//   return (
-//     <div className="App">
-//       <TodoList />
-//     </div>
-//   );
-// }
 
 export default App;
